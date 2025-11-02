@@ -25,24 +25,30 @@ Seluruh data diambil dari API eksternal dummy agar simulasi menyerupai data real
 
 ## Langkah Instalasi & Menjalankan Project
 - Clone repository
+```bash
  git clone https://github.com/RahmiAulia/novatech-sales-dashboard.git
  cd novatech-sales-dashboard
-
+```
 - Install depedencies
+ ```bash
  npm install
-
+```
 - Jalankan project
+ ```bash
  npm run dev
+ ```
 
 ---
 
 ## Screenshot Tampilan Akhir
-
+- dashboard chart
 ![Dashboard Preview](./screenshots/dashboard-page.png)
 ![Line Chart Preview](./screenshots/line-chart.png)
 ![Bar Chart Preview](./screenshots/bar-chart.png)
-![Table Sales Preview](./screenshots/sales-page.png)
-![Table Sales Preview](./screenshots/sales-page2.png)
+- Sales Table 
+![Sales Table Preview](./screenshots/sales-page.png)
+![Sales Table Preview](./screenshots/sales-page2.png)
+- Landing Page
 ![Landing Page Preview](./screenshots/landing-page.png)
 
 
