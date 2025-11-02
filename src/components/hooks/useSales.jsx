@@ -19,7 +19,7 @@ export function useSales() {
           price: p.price,
           category: p.category,
           rating: p.rating,
-          date: randomDate(new Date(2023, 0, 1), new Date()) // tanggal random dari Jan 2023 sampai sekarang
+          date: randomDate(new Date(2023, 0, 1), new Date())
         }));
         setSales(salesData);
         setLoading(false);

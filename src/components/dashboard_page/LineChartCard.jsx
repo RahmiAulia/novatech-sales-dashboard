@@ -10,7 +10,6 @@ import {
 } from "recharts";
 
 const LineChartCard = ({ sales }) => {
-  // Hitung best category per month
   const lineData = useMemo(() => {
     const map = {};
 
@@ -26,7 +25,6 @@ const LineChartCard = ({ sales }) => {
       map[month][item.category] += item.stock;
     });
 
-    // Ambil kategori terbaik tiap bulan
     return Object.entries(map).map(([month, categories]) => {
       const best = Object.entries(categories).reduce(
         (a, b) => (b[1] > a[1] ? b : a)

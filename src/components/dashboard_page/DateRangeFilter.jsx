@@ -5,7 +5,6 @@ const DateRangeFilter = ({ onChange }) => {
   const [endDate, setEndDate] = useState("");
 
   const handleChange = () => {
-    // Kirim tanggal ke parent
     onChange({ startDate, endDate });
   };
 

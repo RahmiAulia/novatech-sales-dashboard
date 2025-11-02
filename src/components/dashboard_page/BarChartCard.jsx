@@ -1,4 +1,3 @@
-// BarChartCard.jsx
 import React, { useMemo } from "react";
 import {
   BarChart,
@@ -12,7 +11,6 @@ import {
 } from "recharts";
 
 const BarChartCard = ({ sales }) => {
-  // Ambil Top 10 produk berdasarkan stock
   const barData = useMemo(() => {
     return sales
       .sort((a, b) => b.stock - a.stock)

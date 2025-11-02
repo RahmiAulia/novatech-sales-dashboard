@@ -5,12 +5,10 @@ import { ChevronUpIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 const TableSales = () => {
   const { sales, loading } = useSales();
 
-  // Semua hooks harus di sini
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
   const [sortConfig, setSortConfig] = useState({ key: "id", direction: "asc" });
 
-  // Sorting
   const sortedSales = useMemo(() => {
     if (!sales) return [];
     const sortableSales = [...sales];
@@ -23,7 +21,6 @@ const TableSales = () => {
     return sortableSales;
   }, [sales, sortConfig]);
 
-  // Pagination
   const totalPages = Math.ceil(sortedSales.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -42,7 +39,6 @@ const TableSales = () => {
 
   if (loading) return <div className="p-6">Loading...</div>;
 
-  // Table headers with fixed width
   const headers = [
     { key: "id", label: "ID", width: "w-16" },
     { key: "product", label: "Product", width: "w-56" },
@@ -55,6 +51,7 @@ const TableSales = () => {
   return (
     <div className="p-6">
       <div className="bg-white shadow-sm rounded-lg overflow-x-auto">
+        {/* tabel */}
         <table className="min-w-full table-fixed border-collapse">
           <thead className="bg-gray-50">
             <tr>
@@ -116,9 +113,8 @@ const TableSales = () => {
         </table>
       </div>
 
-      {/* Pagination */}
+      {/* pagination */}
       <div className="flex flex-wrap justify-center sm:justify-end mt-4 items-center gap-2">
-
         <button
           onClick={handlePrev}
           disabled={currentPage === 1}

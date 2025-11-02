@@ -26,21 +26,17 @@ export default function Dashboard() {
       <Header title="Sales Dashboard" />
       <main>
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          {/* <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-            Sales Dashboard
-          </h1> */}
-
-          {/* Date Range Filter */}
+          {/* filter */}
           <div className="p-5">
             <DateRangeFilter onChange={setDateRange} />
           </div>
 
-          {/* Line Chart */}
+          {/* line chart */}
           <div className="p-5">
             <LineChartCard sales={filteredSales} />
           </div>
 
-          {/* Bar Chart */}
+          {/* bar chart */}
           <div className="p-5">
             <BarChartCard sales={filteredSales} />
           </div>
