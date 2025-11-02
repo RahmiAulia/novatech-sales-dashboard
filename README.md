@@ -17,6 +17,7 @@ Seluruh data diambil dari API eksternal dummy agar simulasi menyerupai data real
  - React JS (Vite) 
  - Tailwind CSS
  - Axios
+ - React Router DOM
  - Recharts
  - Heroicons
  - Headless UI
