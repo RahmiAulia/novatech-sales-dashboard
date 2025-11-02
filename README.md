@@ -9,7 +9,7 @@ Sales Dashboard ini menampilkan:
 - Bar Chart yang menampilkan 10 produk teratas berdasarkan stok.
 - Table Sales dengan fitur sorting dan pagination.
 
-Seluruh data diambil dari API eksternal dummy agar simulasi menyerupai data real.
+Seluruh data diambil dari API eksternal dummy dari https://dummyjson.com/.
 
 ---
 
