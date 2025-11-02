@@ -1,16 +1,48 @@
-# React + Vite
+# Novatech Sales Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini merupakan dashboard analitik penjualan sederhana yang menampilkan data sales dalam bentuk chart dan tabel.  
+Aplikasi ini dibuat menggunakan React JS + Vite dan Tailwind CSS untuk styling, serta Recharts untuk visualisasi data.
 
-Currently, two official plugins are available:
+Sales Dashboard ini menampilkan:
+- Filter tanggal untuk filter data penjualan.
+- Line Chart yang menampilkan kategori terbaik tiap bulan.
+- Bar Chart yang menampilkan 10 produk teratas berdasarkan stok.
+- Table Sales dengan fitur sorting dan pagination.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Seluruh data diambil dari API eksternal dummy agar simulasi menyerupai data real.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Library 
+ - React JS (Vite) 
+ - Tailwind CSS
+ - Axios
+ - Recharts
+ - Heroicons
+ - Headless UI
+ 
+---
 
-## Expanding the ESLint configuration
+## Langkah Instalasi & Menjalankan Project
+- Clone repository
+ git clone https://github.com/RahmiAulia/novatech-sales-dashboard.git
+ cd novatech-sales-dashboard
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Install depedencies
+ npm install
+
+- Jalankan project
+ npm run dev
+
+---
+
+## Screenshot Tampilan Akhir
+
+![Dashboard Preview](./screenshots/dashboard-page.png)
+![Line Chart Preview](./screenshots/line-chart.png)
+![Bar Chart Preview](./screenshots/bar-chart.png)
+![Table Sales Preview](./screenshots/sales-page.png)
+![Table Sales Preview](./screenshots/sales-page2.png)
+![Landing Page Preview](./screenshots/landing-page.png)
+
+
